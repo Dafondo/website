@@ -1,0 +1,47 @@
+body {
+    background: #ba4c49;
+    color: #e0907a;    
+    font-family: "Raleway";
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.name {
+    height: 1.2em;
+    font-family: "NTR";
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.subtitle {
+    margin: 5px;
+    font-style: italic;
+}
+
+.mylinks {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-size: 2em;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: #e0907a;
+}
