@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5 pb-5">
         <div class="info row">
             <div class="col-6">
                 <h1>Split|Screen</h1>
@@ -19,15 +19,19 @@
         </div>
         <br>
         <br>
-        <!-- <div class="playbtn row justify-content-md-center">
-            <div class="col-12 text-center">
-                <button type="button" class="btn btn-success" onclick="play()">Play Music</button>
+        <div class="musicbar p-3">
+            <div class="row justify-content-center">
+                <div class="col-offset-3 col-4 text-center">
+                    <p id="songname">TRACKNAME</p>
+                </div>
+                <div class="col-2 text-center">
+                    <button id="play" type="button" class="btn btn-success" onclick="play()">Play Music</button>
+                </div>
             </div>
-        </div> -->
+        </div>
 
         <div class="scene1" id="scene1">
-            <audio src=""></audio>
-            <div class="merge row justify-content-md-center">
+            <div id="scene1Start" class="merge row justify-content-center">
                 <div class="col-8">
                     <p>Soft, muted music plays</p>
                     <p>FADE IN</p>
@@ -62,6 +66,7 @@
                 <div class="left col-6">
                     <p>
                         Finally, a taller-than-average man steps out. This is Tyler Goodson. He's young - in his twenties - but he looks older than usual today. 
+                        He's wearing a tank top and we see his arms are covered in tattoos. His face is smooth and round until it's interrupted by his curly brown beard.
                         Tyler walks towards the front door. As he approaches the entrance, he pulls a keychain from his pocket.
                         He steps up to the door and pauses. He closes his eyes, breathes deeply, and unlocks the door.
                     </p>
@@ -105,21 +110,21 @@
                     </p>
 
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">RETA</p>
                             <p>Hi. I'm Reta Lawrence, John McLemore's cousin.</p>
                         </div>
                     </div>
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">RECEPTIONIST</p>
                             <p>Oh. I-I'm sorry for your loss. I'm guessing you're looking for Mary Grace. She was taken to the hospital last night.</p>
                         </div>
                     </div>
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-6 text-center">
                             RETA
                         </div>
@@ -145,7 +150,7 @@
                 </div>
                 <br>
             </div>
-            <div class="merge row justify-content-md-center">
+            <div id="scene1End" class="merge row justify-content-center">
                 <div class="left col-6 mb-4"></div><div class="right col-6 mb-4"></div>
                 <div class="w-100"></div>
                 <div class="col-8">
@@ -158,7 +163,7 @@
         </div>
         <hr>
         <div class="scene2" id="scene2">
-            <div class="merge row justify-content-md-center">
+            <div id="scene2Start" class="merge row justify-content-center">
                 <div class="col-8">
                     <!-- <p>Soft, muted music plays</p> -->
                     <p>FADE IN</p>
@@ -189,28 +194,28 @@
                     <p>Reta and Charlie get out of their car and approach the house. The front door is adorned with a new padlock. The police chief gets out of the police car and jogs after them.</p>
 
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">POLICE CHIEF</p>
                             <p>Sir! Ma'am! As I said, I can't get you into the house. We don't have the keys and we don't have a warrant to force our way in.</p>
                         </div>
                     </div>
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">RETA</p>
                             <p>How else can we get in? We need to get some clothes and belongings for Mary Grace.</p>
                         </div>
                     </div>
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">POLICE CHIEF</p>
                             <p>The only other person with keys would be Tyler Goodson. I have his number right here.</p>
                         </div>
                     </div>
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">RETA</p>
                             <p>Tyler who?</p>
@@ -226,28 +231,28 @@
                     <p>INT. HOSPITAL -- MORNING</p>
                     <p>Tyler walks up to the reception desk.</p>
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">TYLER</p>
                             <p>Hi, I'm here to see Mary Grace McLemore.</p>
                         </div>
                     </div>
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">HOSPITAL RECEPTIONIST</p>
                             <p>And what's your relationship to the patient? Mrs. McLemore isn't stable enough right now to have visitors.</p>
                         </div>
                     </div>
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">TYLER</p>
                             <p>She's my Mama. I'm just here to make sure she's doing okay. You can ask here, she'll say she knows me.</p>
                         </div>
                     </div>
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">HOSPITAL RECEPTIONIST</p>
                             <p>I'm sorry, sir. I can't-</p>
@@ -258,7 +263,7 @@
                 <div class="right col-6">
                     <p>The officer pulls out his cell phone. He taps and swipes a few times before finally showing the phone to Reta.
                         Reta, with her own phone out, glances back and forth between the two devices. </p>
-                    <p>She taps a few times on her phone, then holds it up to her ear. The phone is dialing.</p>
+                    <p id="ringstart">She taps a few times on her phone, then holds it up to her ear. The phone is dialing.</p>
                     <p>...</p>
                     <p><i>Ring Ring Ring</i></p>
                     <p>...</p>
@@ -266,15 +271,15 @@
                     <p>...</p>
                     <p><i>Ring Ring Ring</i></p>
                     <p>...</p>
-                    <p><i>Ring Ring Ring</i></p>
+                    <p id="ringend"><i>Ring Ring Ring</i></p>
                 </div>
             </div>
             <div class="row">
                 <div class="left col-6">
-                    <p>RINGTONE</p>
-                    <p>Tyler pulls his phone out, looks puzzlingly at the number, and picks up the call.</p>
+                    <p>TYLER'S PHONE STARTS RINGING</p>
+                    <p id="phonestart">Tyler pulls his phone out, looks puzzlingly at the number, and picks up the call.</p>
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">TYLER</p>
                             <p>Hello? Who is this?</p>
@@ -292,7 +297,7 @@
                 </div>
                 <div class="right col-6">
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">RETA</p>
                             <p>Hello. I'm Reta. I'm John B.'s cousin from Florida. Is this Tyler?</p>
@@ -304,7 +309,7 @@
             <div class="row">
                 <div class="left col-6">
                     <p>Tyler's brow furrows.</p>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">TYLER</p>
                             <p>Yes. John B. never talked about you before. Are you on your way to see Mary Grace?</p>
@@ -322,7 +327,7 @@
                 </div>
                 <div class="right col-6">
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">RETA</p>
                             <p>Yes, we're on our way. We just stopped by the house first to-</p>
@@ -334,7 +339,7 @@
             <div class="row">
                 <div class="left col-6">
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">TYLER</p>
                             <p>You're at the house? You're at the house before visiting the hospital?</p>
@@ -352,7 +357,7 @@
                 </div>
                 <div class="right col-6">
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">RETA</p>
                             <p>The house is on the way to the hospital. Tyler, we just need the keys to get in.</p>
@@ -372,7 +377,7 @@
             <div class="row">
                 <div class="left col-6">
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">TYLER</p>
                             <p>I'm coming there now. Don't. Touch. Anything.</p>
@@ -395,38 +400,38 @@
                 </div>
                 <div class="right col-6">
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">RETA</p>
                             <p>Tyler?</p>
                         </div>
                     </div>
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">CHARLIE</p>
                             <p>That didn't sound too good. Is he coming?</p>
                         </div>
                     </div>
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-8">
                             <p class="text-center">RETA</p>
                             <p>Yes, but he didn't seem very happy about it.</p>
                         </div>
                     </div>
                     <br>
-                    <p>Reta and Charlie turn back around to talk to the police chief. Their conversation can't be heard.</p>
+                    <p id="phoneend">Reta and Charlie turn back around to talk to the police chief. Their conversation can't be heard.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="left col-6">
+                <div id="meetstart" class="left col-6">
                     <p>CUT TO 25 MINUTES LATER</p>
                     <p>EXT. ROAD -- NOON</p>
                     <p>Tyler pulls off the road. The long driveway extends into the trees.</p>
                     <p>Tyler picks up his phone and dials the number for the hospital. After a brief moment the call is connected.</p>
                     <br>
-                    <div class="row justify-content-md-center dialogue">
+                    <div class="row justify-content-center dialogue">
                         <div class="col-6 text-center">
                             TYLER
                         </div>
@@ -461,7 +466,7 @@
                     </p>
                 </div>
             </div>
-            <div class="merge row justify-content-md-center">
+            <div class="merge row justify-content-center">
                 <div class="left col-6 mb-4"></div><div class="right col-6 mb-4"></div>
                 <div class="col-8">
                     <p>THE LEFT AND RIGHT VIEWS MERGE. THE CAMERA SWITCHES TO SHOW THE HOUSE.</p>
@@ -548,236 +553,287 @@
                 <div class="w-100"></div>
                 <div class="col-8">
                     <br>
-                    <h2 class="text-center"><b>YELLING INTENSIFIES</b></h2>
+                    <h2 class="intensify text-center"><b>YELLING INTENSIFIES</b></h2>
                     <br>
                 </div>
                 
                 <div class="w-100"></div>
-                <div class="col-8">
+                <div id="scene2End" class="col-8">
                     <p>The dispute dies down. Tyler quickly returns to his truck and speeds off. 
                         The Lawrences talk briefly with the police chief before getting in their car and following Tyler.
                     </p>
                 </div>
             </div>
-            <hr>
-            <div class="scene3" id="scene3">
-                <div class="merge row justify-content-md-center">
-                    <div class="col-8">
-                        <!-- <p>Soft, muted music plays</p> -->
-                        <p>CUT IN</p>
-                        <p>A VERTICAL LINE DRAWS FROM TOP TO BOTTOM, SPLITTING THE SCREEN INTO LEFT AND RIGHT HALVES.</p>
-                        <p>THE TWO HALVES DISPLAY TWO SCENES SIMULTANEOUSLY.</p>
+        </div>
+        <hr>
+        <div class="scene3" id="scene3">
+            <div id="scene3Start" class="merge row justify-content-center">
+                <div class="col-8">
+                    <!-- <p>Soft, muted music plays</p> -->
+                    <p>CUT IN</p>
+                    <p>A VERTICAL LINE DRAWS FROM TOP TO BOTTOM, SPLITTING THE SCREEN INTO LEFT AND RIGHT HALVES.</p>
+                    <p>THE TWO HALVES DISPLAY TWO SCENES SIMULTANEOUSLY.</p>
+                </div>
+                <div class="w-100"></div>
+                <div class="left col-6 mt-4"></div><div class="right col-6 mt-4"></div>
+            </div>
+
+            <div class="row">
+                <div class="left col-6">
+                    <p>EXT. HOSPITAL -- AFTERNOON</p>
+                    <p>Tyler parks his truck. His parking job is even worse than before. He runs inside the hospital to Mary Grace's room.</p>
+                    <p>INT. HOSPITAL ROOM -- AFTERNOON</p>
+                    <p>Tyler rushes into the room and falls into a chair next to Mary Grace's hospital bed. He's panting heavily.
+                        Mary Grace is awake and turns towards him.</p>
+                    <br>
+                    <div class="row justify-content-center dialogue">
+                        <div class="col-8">
+                            <p class="text-center">MARY GRACE</p>
+                            <p>What's wrong, Tyler?</p>
+                        </div>
                     </div>
-                    <div class="w-100"></div>
-                    <div class="left col-6 mt-4"></div><div class="right col-6 mt-4"></div>
+                    <br>
+                    <div class="row justify-content-center dialogue">
+                        <div class="col-8">
+                            <p class="text-center">TYLER</p>
+                            <p>Mama! The cousins, they're trying to take you away. They're trying to take you to Florida!</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row justify-content-center dialogue">
+                        <div class="col-8">
+                            <p class="text-center">MARY GRACE</p>
+                            <p>Florida? Now why would I go there?</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row justify-content-center dialogue">
+                        <div class="col-8">
+                            <p class="text-center">TYLER</p>
+                            <p>I don't know Mama, but they're tryna take you away from me. I don't want you to leave. I can take care of you, promise!</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="right col-6">
+                    <p>EXT. ROAD -- AFTERNOON</p>
+                    <p>Reta and Charlie are in their car, driving towards the hospital.</p>
+                    <br>
+                    <br>
+                    <p>They run a red light.</p>
+                    <br>
+                    <br>
+                    <p>Left turn.</p>
+                    <br>
+                    <br>
+                    <p>Right turn.</p>
+                    <br>
+                    <br>
+                    <p>EXT. HOSPITAL -- AFTERNOON</p>
+                    <p>They turn into the parking lot.</p>
+                    <br>
+                    <p>They park next to Tyler's truck.</p>
+                    <br>
+                    <p>They run into the hospital.</p>
+                    <br>
+                    <p>INT. HOSPITAL -- AFTERNOON</p>
+                    <p>They take the stairs and emerge on the third floor.</p>
+                </div>
+            </div>
+            <div class="merge row justify-content-center">
+                <div class="left col-6 mb-4"></div><div class="right col-6 mb-4"></div>
+                <div class="col-8">
+                    <p>THE LEFT AND RIGHT VIEWS MERGE.</p>
+                    <p>INT. HOSPITAL ROOM -- AFTERNOON</p>
+                    <p>Reta and Charlie enter the hospital room. Tyler is sitting next to Mary Grace - almost on top of her - like a guard dog.
+                        Reta approaches Mary Grace.
+                    </p>
                 </div>
 
-                <div class="row">
-                    <div class="left col-6">
-                        <p>EXT. HOSPITAL -- AFTERNOON</p>
-                        <p>Tyler parks his truck. His parking job is even worse than before. He runs inside the hospital to Mary Grace's room.</p>
-                        <p>INT. HOSPITAL ROOM -- AFTERNOON</p>
-                        <p>Tyler rushes into the room and falls into a chair next to Mary Grace's hospital bed. He's panting heavily.
-                            Mary Grace is awake and turns towards him.</p>
-                        <br>
-                        <div class="row justify-content-md-center dialogue">
-                            <div class="col-8">
-                                <p class="text-center">MARY GRACE</p>
-                                <p>What's wrong, Tyler?</p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row justify-content-md-center dialogue">
-                            <div class="col-8">
-                                <p class="text-center">TYLER</p>
-                                <p>Mama! The cousins, they're trying to take you away. They're trying to take you to Florida!</p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row justify-content-md-center dialogue">
-                            <div class="col-8">
-                                <p class="text-center">MARY GRACE</p>
-                                <p>Florida? Now why would I go there?</p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row justify-content-md-center dialogue">
-                            <div class="col-8">
-                                <p class="text-center">TYLER</p>
-                                <p>I don't know Mama, but they're tryna take you away from me. I don't want you to leave. I can take care of you, promise!</p>
-                            </div>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="right col-6">
-                        <p>EXT. ROAD -- AFTERNOON</p>
-                        <p>Reta and Charlie are in their car, driving towards the hospital.</p>
-                        <br>
-                        <br>
-                        <p>They run a red light.</p>
-                        <br>
-                        <br>
-                        <p>Left turn.</p>
-                        <br>
-                        <br>
-                        <p>Right turn.</p>
-                        <br>
-                        <br>
-                        <p>EXT. HOSPITAL -- AFTERNOON</p>
-                        <p>They turn into the parking lot.</p>
-                        <br>
-                        <p>They park next to Tyler's truck.</p>
-                        <br>
-                        <p>They run into the hospital.</p>
-                        <br>
-                        <p>INT. HOSPITAL -- AFTERNOON</p>
-                        <p>They take the stairs and emerge on the third floor.</p>
-                    </div>
-
-                    <div class="left col-6">
-
-                    </div>
-                    <div class="right col-6">
-                        
-                    </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                    <br>
+                    <p class="text-center">RETA</p>
+                    <p>Mary Grace! I've missed you. I'm so sorry about what's happened. I can't imagine how you must feel right now.</p>
+                    <br>
                 </div>
-                <div class="merge row justify-content-md-center">
-                    <div class="left col-6 mb-4"></div><div class="right col-6 mb-4"></div>
-                    <div class="col-8">
-                        <p>THE LEFT AND RIGHT VIEWS MERGE.</p>
-                        <p>INT. HOSPITAL ROOM -- AFTERNOON</p>
-                        <p>Reta and Charlie enter the hospital room. Tyler is sitting next to Mary Grace - almost on top of her - like a guard dog.
-                            Reta approaches Mary Grace.
-                        </p>
-                    </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-4">
-                        <br>
-                        <p class="text-center">RETA</p>
-                        <p>Mary Grace! I've missed you. I'm so sorry about what's happened. I can't imagine how you must feel right now.</p>
-                        <br>
-                    </div>
+                <div class="w-100"></div>
+                <div class="col-8">
+                    <p>Reta begins to tear up. Charlie puts his hand on her shoulder to comfort her.</p>
+                </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-8">
-                        <p>Reta begins to tear up. Charlie puts his hand on her shoulder to comfort her.</p>
-                    </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                    <br>
+                    <p class="text-center">MARY GRACE</p>
+                    <p>You're right. You can't. You've never had any kids. You've never lost any kids.</p>
+                </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-4">
-                        <br>
-                        <p class="text-center">MARY GRACE</p>
-                        <p>You're right. You can't. You've never had any kids. You've never lost any kids.</p>
-                    </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                    <br>
+                    <p class="text-center">RETA</p>
+                    <p>Mary Grace... do you know who this is?</p>
+                </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-4">
-                        <br>
-                        <p class="text-center">RETA</p>
-                        <p>Mary Grace... do you know who this is?</p>
-                    </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                    <br>
+                    <p class="text-center">MARY GRACE</p>
+                    <p>Yes, I know who you are, Reta.</p>
+                </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-4">
-                        <br>
-                        <p class="text-center">MARY GRACE</p>
-                        <p>Yes, I know who you are, Reta.</p>
-                    </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                    <br>
+                    <p class="text-center">RETA</p>
+                    <p>Excuse me, Mary Grace.</p>
+                </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-4">
-                        <br>
-                        <p class="text-center">RETA</p>
-                        <p>Excuse me, Mary Grace.</p>
-                    </div>
+                <div class="w-100"></div>
+                <div id="hospend" class="col-8">
+                    <p>Reta motions to Charlie and they exit the room. They go to the front desk for the third floor and talk to one of the nurses there.</p>
+                </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-8">
-                        <p>Reta motions to Charlie and they exit the room. They go to the front desk for the third floor and talk to one of the nurses there.</p>
-                    </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                    <br>
+                    <p class="text-center">RETA</p>
+                    <p>Excuse me, I have a question about Mary Grace. She's a patient here.</p>
+                </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-4">
-                        <br>
-                        <p class="text-center">RETA</p>
-                        <p>Excuse me, I have a question about Mary Grace. She's a patient here.</p>
-                    </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                    <br>
+                    <p class="text-center">NURSE</p>
+                    <p>Oh Mary Grace is such a sweetheart. We've really enjoyed having her around today.</p>
+                </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-4">
-                        <br>
-                        <p class="text-center">NURSE</p>
-                        <p>Oh Mary Grace is such a sweetheart. We've really enjoyed having her around today.</p>
-                    </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                    <br>
+                    <p class="text-center">RETA</p>
+                    <p>Do you know the young man in there with her right now? His name is Tyler.</p>
+                </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-4">
-                        <br>
-                        <p class="text-center">RETA</p>
-                        <p>Do you know the young man in there with her right now? His name is Tyler.</p>
-                    </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                    <br>
+                    <p class="text-center">NURSE</p>
+                    <p>Oh him? he barged in here earlier today. We're not sure who he is, but he calls her Mama. We know her only son just died. 
+                        Maybe Tyler is her adopted son?
+                    </p>
+                </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-4">
-                        <br>
-                        <p class="text-center">NURSE</p>
-                        <p>Oh him? he barged in here earlier today. We're not sure who he is, but he calls her Mama. We know her only son just died. 
-                            Maybe Tyler is her adopted son?
-                        </p>
-                    </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                    <br>
+                    <p class="text-center">RETA</p>
+                    <p>She's never adopted before. That I know for sure.</p>
+                </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-4">
-                        <br>
-                        <p class="text-center">RETA</p>
-                        <p>She's never adopted before. That I know for sure.</p>
-                    </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                    <br>
+                    <p class="text-center">NURSE</p>
+                    <p>Well she seems pretty happy with him. I don't think it's a good idea to separate them so soon after her son's death.
+                    </p>
+                </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-4">
-                        <br>
-                        <p class="text-center">NURSE</p>
-                        <p>Well she seems pretty happy with him. I don't think it's a good idea to separate them so soon after her son's death.
-                        </p>
-                    </div>
+                <div class="w-100"></div>
+                <div class="col-8">
+                    <p>Reta sighs. She continues talking with the nurse for a bit. Then, Reta and Charlie head back into Mary Grace's room.
+                        As they enter, Tyler and Mary Grace look up. Reta turns to Tyler.
+                    </p>
+                </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-8">
-                        <p>Reta sighs. She continues talking with the nurse for a bit. Then, Reta and Charlie head back into Mary Grace's room.
-                            As they enter, Tyler and Mary Grace look up. Reta turns to Tyler.
-                        </p>
-                    </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                    <br>
+                    <p class="text-center">RETA</p>
+                    <p>Look, it seems Mary Grace wants you to move in and take care of her. And if you want to do that then, so be it.
+                        I'll stay for the funeral, but then I'm going home to Florida.
+                    </p>
+                </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-4">
-                        <br>
-                        <p class="text-center">RETA</p>
-                        <p>Look, it seems Mary Grace wants you to move in and take care of her. And if you want to do that then, so be it.
-                            I'll stay for the funeral, but then I'm going home to Florida.
-                        </p>
-                    </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                    <br>
+                    <p class="text-center">TYLER</p>
+                    <p>Thank you. I'll take good care of Mary Grace.</p>
+                </div>
 
-                    <div class="w-100"></div>
-                    <div class="col-4">
-                        <br>
-                        <p class="text-center">TYLER</p>
-                        <p>Thank you. I'll take good care of Mary Grace.</p>
-                    </div>
-
-                    <div class="w-100"></div>
-                    <div class="col-8">
-                        <p>THE CONVERSATION CONTINUES AS AUDIO FADES OUT</p>
-                        <p>FADE OUT</p>
-                    </div>
+                <div class="w-100"></div>
+                <div id="scene3End" class="col-8">
+                    <p>THE CONVERSATION CONTINUES AS AUDIO FADES OUT</p>
+                    <p>FADE OUT</p>
                 </div>
             </div>
         </div>
-    <div class="container">
+        <hr>
+        <div class="scene4" id="scene4">
+            <div id="scene4Start" class="merge row justify-content-center">
+                <div class="col-8">
+                    <!-- <p>Soft, muted music plays</p> -->
+                    <p>CUT IN</p>
+                    <p>A VERTICAL LINE DRAWS FROM TOP TO BOTTOM, SPLITTING THE SCREEN INTO LEFT AND RIGHT HALVES.</p>
+                    <p>THE TWO HALVES DISPLAY TWO SCENES SIMULTANEOUSLY.</p>
+                </div>
+                <div class="w-100"></div>
+                <div class="left col-6 mt-4"></div><div class="right col-6 mt-4"></div>
+            </div>
+            <div class="row">
+                <div class="left col-6">
+                    <p>EXT. JOHN'S HOUSE -- AFTERNOON</p>
+                    <p>
+                        Tyler parks his car around the back of the house. He walks up to two large trailers and hitches one to his truck.
+                        Another man parks his truck beside Tyler's. The man gets out, greets Tyler, and proceeds to hitch the other trailer.
+                        Both men return to their cars, and drive away with trailer in tow. The sun sets in the distance.
+                    </p>
+                </div>
+                <div class="right col-6">
+                    <p>INT. SMALL HOTEL ROOM -- AFTERNOON</p>
+                    <p>
+                        Reta and Charlie are in a one bedroom hotel room. Charlie is reading a book, while Reta goes through some documents.
+                        Reta's cell phone rings. She picks up and we hear a woman speaking on the other end of the line.
+                    </p>
+                    <div class="row justify-content-center dialogue">
+                        <div class="col-8">
+                            <p class="text-center">WOMAN</p>
+                            <p>Hello, this is the Alabama State Board of Social Work Examiners. Am I speaking to Mrs. Reta Lawrence?</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center dialogue">
+                        <div class="col-8">
+                            <p class="text-center">RETA</p>
+                            <p>Yes, that's me.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center dialogue">
+                        <div class="col-8">
+                            <p class="text-center">WOMAN</p>
+                            <p>I'd like to talk to you about Mary Grace McLemore. We've deemed her current care and living situation to be
+                                unhealthy...
+                            </p>
+                        </div>
+                    </div>
+                    <p>The conversation fades out</p>
+                </div>
+            </div>
+            <div id="scene4End" class="merge row justify-content-center">
+                <div class="col-8">
+                    <p class="text-center">CUT OUT</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha256-XJuslujM3cGzRZGiSi/KNSdk58uORO/mmrEQNjVtb5k=" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
 </body>
 </html>
