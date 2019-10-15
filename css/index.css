@@ -1,6 +1,6 @@
 body {
-    background: #ba4c49;
-    color: #e0907a;    
+    background: rgb(95, 25, 23);
+    color: #e9b8ab;    
     font-family: "Raleway";
     font-size: 1.2em;
     line-height: 1.6;
@@ -31,6 +31,7 @@ body {
 .subtitle {
     margin: 5px;
     font-style: italic;
+    font-weight: normal;
 }
 
 .mylinks {
@@ -43,5 +44,5 @@ body {
 }
 
 a, a:link, a:visited, a:hover, a:active {
-    color: #e0907a;
+    color: #e9b8ab;
 }
