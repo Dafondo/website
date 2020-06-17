@@ -35,7 +35,7 @@ body {
 }
 
 .mylinks {
-    width: 60%;
+    width: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
